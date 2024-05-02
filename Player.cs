@@ -4,7 +4,7 @@ namespace GuessTheNumber
 {
     class Player
     {
-        string userName;
+        string inputName = "";
         int lastNumber;
 
         public void StartPlayer()
@@ -13,7 +13,7 @@ namespace GuessTheNumber
 
         public void SetUserName(string name)
         {
-            userName = name;
+            inputName = name;
         }
         public void SetLastNumber(int number)
         {
@@ -22,7 +22,7 @@ namespace GuessTheNumber
 
         public string GetUserName()
         {
-            return userName;
+            return inputName;
         }
         public int GetLastNumber()
         {

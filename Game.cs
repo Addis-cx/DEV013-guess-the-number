@@ -1,33 +1,35 @@
-using System;
+        using System;
 
-namespace GuessTheNumber
-{
-    class Game
-    {
-        int randomNumber;
-        int numberUser;
-        bool gameOver;
-
-        public Game()
+        namespace GuessTheNumber
         {
-            randomNumber = new Random().Next(0, 100);
+            class Game
+            {
+                int randomNumber;
+                int numberUser;
 
-            Console.WriteLine("Ingresa el número aquí");
-            numberUser = Convert.ToInt32(Console.ReadLine());
-            gameOver = false;
+                public void InitializeGame()
+                {
 
-            if (numberUser > randomNumber)
-            {
-                Console.WriteLine("¡To High!");
-            }
-            else if (numberUser < randomNumber)
-            {
-                Console.WriteLine("¡To Low!");
-            } 
-            else 
-            {
-                Console.WriteLine("¡YOU WIN!");
+                }
+                public void StartGame()
+                {
+                    randomNumber = new Random().Next(0, 100);
+
+                    Console.WriteLine("Ingresa el número aquí");
+                    numberUser = Convert.ToInt32(Console.ReadLine());
+
+                    if (numberUser > randomNumber)
+                    {
+                        Console.WriteLine("¡To High!");
+                    }
+                    else if (numberUser < randomNumber)
+                    {
+                        Console.WriteLine("¡To Low!");
+                    } 
+                    else 
+                    {
+                        Console.WriteLine("¡YOU WIN!");
+                    }
+                }
             }
         }
-    }
-}
