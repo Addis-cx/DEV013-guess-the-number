@@ -6,14 +6,16 @@ namespace GuessTheNumber
     {
         static void Main(string[] args)
         {
-             string userName = "";
-             
-             Console.WriteLine("Ingresa tu nombre...");
-             userName = Console.ReadLine();
-             Console.WriteLine($"Hola {userName}, bienvenida al juego de adivinar números");
+             Console.WriteLine($"Bienvenida al juego de adivinar números");
 
-             Game game = new Game();
-             game.startGame();
+             Player playerClass = new Player();
+             Game gameClass = new Game();
+
+             Console.WriteLine("Ingresa tu nombre: ");
+             string playerName = Console.ReadLine();
+             playerClass.SetUserName(playerName);
+
+             gameClass.Game();
         }
     }
 }
