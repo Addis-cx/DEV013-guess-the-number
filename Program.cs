@@ -4,34 +4,21 @@ namespace GuessTheNumber
 {
     class Program
     {
-        string inputName = "";
 
         static void Main(string[] args)
         {
-        }
-
-        public void StartProgram()
-        {
-             Console.WriteLine($"Bienvenida al juego de adivinar números");
-
+             string? inputName;
              Player playerClass = new Player();
              Game gameClass = new Game();
 
+             Console.WriteLine($"Bienvenida al juego de adivinar números");
              Console.WriteLine("Ingresa tu nombre: ");
+
              inputName = Console.ReadLine();
-             if (!string.IsNullOrEmpty(inputName))
-            {
-                playerClass.SetUserName(inputName);
-            }
-            else
-            {
-                Console.WriteLine("Nombre inválido. Inténtalo de nuevo.");
-        
-            }
-             playerClass.SetUserName(inputName);
+    
+             playerClass.UserName = inputName;
 
              gameClass.StartGame();
-
         }
     }
 }

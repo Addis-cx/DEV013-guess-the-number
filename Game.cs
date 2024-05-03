@@ -9,7 +9,6 @@
 
                 public void InitializeGame()
                 {
-
                 }
                 public void StartGame()
                 {

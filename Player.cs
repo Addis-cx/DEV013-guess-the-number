@@ -4,29 +4,21 @@ namespace GuessTheNumber
 {
     class Player
     {
-        string inputName = "";
+        string? userName;
         int lastNumber;
-
+        
+        public string? UserName
+        {
+             set { userName = value; }
+             get { return userName; }
+        }
         public void StartPlayer()
         {
         }
-
-        public void SetUserName(string name)
+        public int LastNumber
         {
-            inputName = name;
-        }
-        public void SetLastNumber(int number)
-        {
-            lastNumber = number;
-        }
-
-        public string GetUserName()
-        {
-            return inputName;
-        }
-        public int GetLastNumber()
-        {
-            return lastNumber;
+             set { lastNumber = value; }
+             get { return lastNumber; }
         }
     }
 }
