@@ -8,17 +8,24 @@ namespace GuessTheNumber
         static void Main(string[] args)
         {
              string? inputName;
-             Player playerClass = new Player();
-             Game gameClass = new Game();
+             Player jugadorSimple = new Player();
+             Player jugadorConPropiedades = new Player("addis");
+             bool result = jugadorConPropiedades.MakeGuess(10);
+             
 
-             Console.WriteLine($"Bienvenida al juego de adivinar números");
-             Console.WriteLine("Ingresa tu nombre: ");
+             Console.WriteLine(jugadorSimple.userName);
+             Console.WriteLine(jugadorConPropiedades.userName);
+             Console.WriteLine(result);
+            //  Game gameClass = new Game();
 
-             inputName = Console.ReadLine();
+            //  Console.WriteLine($"Bienvenida al juego de adivinar números");
+            //  Console.WriteLine("Ingresa tu nombre: ");
+
+            //  inputName = Console.ReadLine();
     
-             playerClass.UserName = inputName;
+            //  playerClass.UserName = inputName;
 
-             gameClass.StartGame();
+            //  gameClass.StartGame();
         }
     }
 }
