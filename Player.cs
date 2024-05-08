@@ -4,6 +4,7 @@ namespace GuessTheNumber
 {
     class Player
     {
+        //propiedades que caracterizan el objeto
         public string? userName;
         private int lastNumber;
         public int predicNumber;
@@ -36,7 +37,6 @@ namespace GuessTheNumber
                     } 
                     else 
                     {
-                        Console.WriteLine("¡YOU WIN!");
                         return true;
                     }
             
