@@ -4,7 +4,7 @@
         {
             class Game
             {
-                int randomNumber;
+                private int randomNumber;
 
                 public Game()
                 {

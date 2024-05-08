@@ -5,20 +5,9 @@ namespace GuessTheNumber
     class Player
     {
         public string? userName;
-        int lastNumber;
-        int predicNumber;
+        private int lastNumber;
+        public int predicNumber;
         //propiedades que caracterizan el objeto
-
-        // public string? UserName
-        // {
-        //      set { userName = value; }
-        //      get { return userName; }
-        // }
-        // public int LastNumber
-        // {
-        //      set { lastNumber = value; }
-        //      get { return lastNumber; }
-        // }
 
         //constructor
         public Player()
