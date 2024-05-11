@@ -1,23 +1,16 @@
-﻿using System;
-
-namespace GuessTheNumber
+﻿namespace GuessTheNumber
 {
     class Program
     {
 
         static void Main(string[] args)
         {
-             string? inputName;
-             
-             Game gameClass = new Game();
-             Player playerClass = new Player();
+             Game gameObject = new Game();
+             Player playerOject = new Player();
 
-             Console.WriteLine($"Bienvenida al juego de adivinar números");
-             Console.WriteLine("Ingresa tu nombre: ");
-
-             inputName = Console.ReadLine();
-
-             gameClass.StartGame(10);
+             gameObject.StartGame("Addis");
+             gameObject.CheckGuess(10, 20);
+             playerOject.MakeGuess(10);
         }
     }
 }

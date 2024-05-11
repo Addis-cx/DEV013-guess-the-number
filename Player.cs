@@ -1,5 +1,3 @@
-using System;
-
 namespace GuessTheNumber
 {
     class Player
@@ -39,6 +37,10 @@ namespace GuessTheNumber
                     {
                         return true;
                     }
+            
+        }
+        public void GetLastGuess()
+        {
             
         }
     }

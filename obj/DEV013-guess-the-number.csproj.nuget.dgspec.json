@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Documents\\Proyecto-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj": {}
+    "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Documents\\Proyecto-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj": {
+    "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Documents\\Proyecto-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj",
+        "projectUniqueName": "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj",
         "projectName": "DEV013-guess-the-number",
-        "projectPath": "C:\\Users\\Alumno\\Documents\\Proyecto-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Documents\\Proyecto-Laboratoria\\DEV013-guess-the-number\\obj\\",
+        "projectPath": "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj",
+        "packagesPath": "C:\\Users\\Laboratoria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\DEV013-guess-the-number\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Laboratoria\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
