@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DEV013_guess_the_number
-build_property.ProjectDir = C:\Users\Laboratoria\Documents\Proyect-Laboratoria\DEV013-guess-the-number\
+build_property.ProjectDir = C:\Users\Laboratoria\OneDrive\Documentos\Proyect-Laboratoria\DEV013-guess-the-number\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

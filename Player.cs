@@ -3,9 +3,8 @@ namespace GuessTheNumber
     class Player
     {
         //propiedades que caracterizan el objeto
-        public string? userName;
-        private int lastNumber;
-        public int predicNumber;
+        public string? UserName;
+        private int LastGuess;
         //propiedades que caracterizan el objeto
 
         //constructor
@@ -14,34 +13,19 @@ namespace GuessTheNumber
         }
         public Player(string name)
         {
-            userName = name;
-            lastNumber = 0;
+            UserName = name;
+            LastGuess = 0;
         }
         //funcion
-        public bool MakeGuess( int randomNumber )
+        public int MakeGuess()
         {
             Console.WriteLine("Ingresa tu número: ");
-            predicNumber = Convert.ToInt32(Console.ReadLine());
-
-                    if (predicNumber > randomNumber)
-                    {
-                        Console.WriteLine("¡To High!");
-                        return false;
-                    }
-                    else if (predicNumber < randomNumber)
-                    {
-                        Console.WriteLine("¡To Low!");
-                        return false;
-                    } 
-                    else 
-                    {
-                        return true;
-                    }
-            
+            LastGuess = Convert.ToInt32(Console.ReadLine());
+            return LastGuess;
         }
-        public void GetLastGuess()
+        public int GetLastGuess()
         {
-            
+            return LastGuess;
         }
     }
 }

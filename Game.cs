@@ -1,34 +1,48 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace GuessTheNumber
 {
     class Game
     {
-        private int randomNumber;
+        private int RandomNumber;
+        private Player player;
 
         public Game()
         {
-        }
-        public void StartGame( string? inputName )
-        {
-            Console.WriteLine($"Bienvenida al juego de adivinar números");
-            Console.WriteLine("Ingresa tu nombre: ");
+            RandomNumberGenerator();
+            player = new Player();
 
-            inputName = Console.ReadLine();
         }
         private void RandomNumberGenerator()
         {
-            randomNumber = new Random().Next(0, 101);
+            RandomNumber = new Random().Next(0, 101);
         }
-        public void CheckGuess( int number, int randomNumber )
+        public bool CheckGuess( int guess, int targetNumber )
         {
-            Player firstPlayer = new Player("Addis");
-
-            number = 0;
-            while ( number != randomNumber )
+            if ( guess > targetNumber )
             {
-                number = firstPlayer.MakeGuess( number );
-                if ( number == randomNumber )
+                Console.Write("¡To High!");
+                return false;
+            }
+            else if ( guess < targetNumber )
+            {
+                Console.Write("¡To Low!");
+                return false;
+            }
+            else
+            {
+                Console.Write("¡YOU WIN!");
+                return true;
+            }
+        }
+        public void StartGame()
+        {
+            Console.WriteLine($"BIENVENIDA AL JUEGO DE ADIVINAR NÚMEROS");
+            while (true)
+            {
+                int guess = player.MakeGuess();
+                if (CheckGuess( guess, RandomNumber))
                 {
-                    Console.WriteLine("¡YOU WIN!");
                     break;
                 }
             }

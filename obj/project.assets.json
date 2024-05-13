@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\Dev013-guess-the-number\\DEV013-guess-the-number.csproj",
+      "projectUniqueName": "C:\\Users\\Laboratoria\\OneDrive\\Documentos\\Proyect-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj",
       "projectName": "DEV013-guess-the-number",
-      "projectPath": "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\Dev013-guess-the-number\\DEV013-guess-the-number.csproj",
+      "projectPath": "C:\\Users\\Laboratoria\\OneDrive\\Documentos\\Proyect-Laboratoria\\DEV013-guess-the-number\\DEV013-guess-the-number.csproj",
       "packagesPath": "C:\\Users\\Laboratoria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Laboratoria\\Documents\\Proyect-Laboratoria\\Dev013-guess-the-number\\obj\\",
+      "outputPath": "C:\\Users\\Laboratoria\\OneDrive\\Documentos\\Proyect-Laboratoria\\DEV013-guess-the-number\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Laboratoria\\AppData\\Roaming\\NuGet\\NuGet.Config"

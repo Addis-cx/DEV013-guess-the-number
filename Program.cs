@@ -6,11 +6,11 @@
         static void Main(string[] args)
         {
              Game gameObject = new Game();
-             Player playerOject = new Player();
+            //  Player playerOject = new Player();
 
-             gameObject.StartGame("Addis");
+             gameObject.StartGame();
              gameObject.CheckGuess(10, 20);
-             playerOject.MakeGuess(10);
+            //  playerOject.MakeGuess(10);
         }
     }
 }
