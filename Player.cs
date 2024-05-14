@@ -1,31 +1,16 @@
+using System;
+using System.Collections.Generic;
+
 namespace GuessTheNumber
 {
-    class Player
+    //clase abstracta 
+    abstract class Player(string name)
     {
         //propiedades que caracterizan el objeto
-        public string? UserName;
-        private int LastGuess;
-        //propiedades que caracterizan el objeto
+        public string? UserName = name;
+        public List<int>;
 
-        //constructor
-        public Player()
-        {
-        }
-        public Player(string name)
-        {
-            UserName = name;
-            LastGuess = 0;
-        }
-        //funcion
-        public int MakeGuess()
-        {
-            Console.WriteLine("Ingresa tu número: ");
-            LastGuess = Convert.ToInt32(Console.ReadLine());
-            return LastGuess;
-        }
-        public int GetLastGuess()
-        {
-            return LastGuess;
-        }
+        //método
+        public abstract int MakeGuess();
     }
 }

@@ -1,16 +1,17 @@
-﻿namespace GuessTheNumber
+﻿using System;
+using System.Text;
+
+namespace GuessTheNumber
 {
     class Program
     {
 
         static void Main(string[] args)
         {
+            //instancia Game
              Game gameObject = new Game();
-            //  Player playerOject = new Player();
 
              gameObject.StartGame();
-             gameObject.CheckGuess(10, 20);
-            //  playerOject.MakeGuess(10);
         }
     }
 }

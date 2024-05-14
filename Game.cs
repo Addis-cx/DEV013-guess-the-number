@@ -1,17 +1,18 @@
-using System.Security.Cryptography.X509Certificates;
+using System;
+using System.Collections.Generic;
+using System.Numerics;
 
 namespace GuessTheNumber
 {
     class Game
     {
         private int RandomNumber;
-        private Player player;
+        private readonly Player _AIPlayer;
+        private readonly Player _HumanPlayer;
 
         public Game()
         {
             RandomNumberGenerator();
-            player = new Player();
-
         }
         private void RandomNumberGenerator()
         {
@@ -40,7 +41,7 @@ namespace GuessTheNumber
             Console.WriteLine($"BIENVENIDA AL JUEGO DE ADIVINAR NÚMEROS");
             while (true)
             {
-                int guess = player.MakeGuess();
+                int guess = ;
                 if (CheckGuess( guess, RandomNumber))
                 {
                     break;
