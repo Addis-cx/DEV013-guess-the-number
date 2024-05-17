@@ -3,14 +3,19 @@ using System.Collections.Generic;
 
 namespace GuessTheNumber
 {
-    //clase abstracta 
-    abstract class Player(string name)
+    //Clase abstracta para representar un jugador general
+    abstract class Player
     {
         //propiedades que caracterizan el objeto
-        public string? UserName = name;
-        public List<int>;
+        public string? UserName; //Nombre del jugador
+        public List<int> Guesses; //Lista de intentos 
 
-        //método
+        public Player(string name)
+        {
+            UserName = name;
+            Guesses = new List<int>(); //Inicialice la lista de intentos 
+        }
+        //Método abstracto para que las clases heredadas la adapten segun las necesidades
         public abstract int MakeGuess();
     }
 }

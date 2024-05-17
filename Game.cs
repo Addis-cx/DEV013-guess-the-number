@@ -10,9 +10,11 @@ namespace GuessTheNumber
         private readonly Player _AIPlayer;
         private readonly Player _HumanPlayer;
 
-        public Game()
+        public Game( string name )
         {
             RandomNumberGenerator();
+            _AIPlayer = new AIPlayer();
+            _HumanPlayer = new HumanPlayer(name);
         }
         private void RandomNumberGenerator()
         {
@@ -22,29 +24,40 @@ namespace GuessTheNumber
         {
             if ( guess > targetNumber )
             {
-                Console.Write("¡To High!");
+                Console.WriteLine("¡To High!");
                 return false;
             }
             else if ( guess < targetNumber )
             {
-                Console.Write("¡To Low!");
+                Console.WriteLine("¡To Low!");
                 return false;
             }
             else
             {
-                Console.Write("¡YOU WIN!");
+                Console.WriteLine("¡YOU WIN!");
                 return true;
             }
         }
-        public void StartGame()
+        public void StartGame(string name)
         {
-            Console.WriteLine($"BIENVENIDA AL JUEGO DE ADIVINAR NÚMEROS");
-            while (true)
+            Console.WriteLine($"BIENVENIDAS AL JUEGO DE ADIVINAR NÚMEROS");
+            bool gameContinue = true;
+            while (gameContinue)
             {
-                int guess = ;
-                if (CheckGuess( guess, RandomNumber))
+                Console.WriteLine($"TURNO DE {name}");
+                int humanGuess = _HumanPlayer.MakeGuess();
+                if (CheckGuess( humanGuess, RandomNumber))
                 {
-                    break;
+                    gameContinue = false;
+                }
+                else
+                {
+                    Console.WriteLine("TURNO DE System");
+                    int aiGuess = _AIPlayer.MakeGuess();
+                    if (CheckGuess( aiGuess, RandomNumber ))
+                    {
+                        gameContinue = false;
+                    }
                 }
             }
         }
