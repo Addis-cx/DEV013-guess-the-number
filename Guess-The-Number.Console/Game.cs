@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Threading;
 
 namespace GuessTheNumber
 {
@@ -14,7 +15,7 @@ namespace GuessTheNumber
         {
             RandomNumberGenerator();
             _AIPlayer = new AIPlayer();
-            _HumanPlayer = new HumanPlayer(name);
+            _HumanPlayer = new HumanPlayer();
         }
         private void RandomNumberGenerator()
         {
@@ -22,6 +23,7 @@ namespace GuessTheNumber
         }
         public bool CheckGuess( int guess, int targetNumber )
         {
+            Thread.Sleep(500);
             if ( guess > targetNumber )
             {
                 Console.WriteLine("¡Too High!");
@@ -38,12 +40,16 @@ namespace GuessTheNumber
                 return true;
             }
         }
-        public void StartGame(string name)
+        public void StartGame(string? name)
         {
+            Thread.Sleep(500);
+            Console.WriteLine("");
             Console.WriteLine($"BIENVENIDAS AL JUEGO DE ADIVINAR NÚMEROS");
+
             bool gameContinue = true;
             while (gameContinue)
             {
+                Console.WriteLine("");
                 Console.WriteLine($"TURNO DE {name}");
                 int humanGuess = _HumanPlayer.MakeGuess();
                 if (CheckGuess( humanGuess, RandomNumber))
@@ -52,7 +58,10 @@ namespace GuessTheNumber
                 }
                 else
                 {
+                    Console.WriteLine("");
+                    Thread.Sleep(500);
                     Console.WriteLine("TURNO DE System");
+                    Thread.Sleep(500);
                     int aiGuess = _AIPlayer.MakeGuess();
                     if (CheckGuess( aiGuess, RandomNumber ))
                     {

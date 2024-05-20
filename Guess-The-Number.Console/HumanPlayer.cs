@@ -5,7 +5,7 @@ namespace GuessTheNumber
 {
      class HumanPlayer : Player
     {
-        public HumanPlayer( string name ) : base( name )
+        public HumanPlayer() : base( "Addis" )
         {
         }
 
