@@ -9,7 +9,7 @@ namespace GuessTheNumber
         static void Main(string[] args)
         {
             Console.Write("Ingresa tu nombre: ");
-            string name = Console.ReadLine();
+            string? name = Console.ReadLine();
             //Instancia de la clase Game
              Game gameObject = new Game(name);
              //Llamo al metodo StartGame para comenzar el juego

@@ -5,7 +5,7 @@ namespace GuessTheNumber
 {
     class AIPlayer : Player //Clase heredada de Player, con sus propiedades y métodos
     {
-        private Random random; //Variable para generar números aleatorios
+        private Random? random; //Variable para generar números aleatorios
 
         public AIPlayer() : base("System")
         {

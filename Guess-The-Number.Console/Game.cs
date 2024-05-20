@@ -4,13 +4,13 @@ using System.Numerics;
 
 namespace GuessTheNumber
 {
-    class Game
+    public class Game
     {
         private int RandomNumber;
         private readonly Player _AIPlayer;
         private readonly Player _HumanPlayer;
 
-        public Game( string name )
+        public Game( string? name )
         {
             RandomNumberGenerator();
             _AIPlayer = new AIPlayer();
@@ -24,12 +24,12 @@ namespace GuessTheNumber
         {
             if ( guess > targetNumber )
             {
-                Console.WriteLine("¡To High!");
+                Console.WriteLine("¡Too High!");
                 return false;
             }
             else if ( guess < targetNumber )
             {
-                Console.WriteLine("¡To Low!");
+                Console.WriteLine("¡Too Low!");
                 return false;
             }
             else
