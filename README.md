@@ -18,9 +18,11 @@ donde la jugadora y el ordenador se turnan para intentar adivinar un número
 aleatorio entre 1 y 100. Deben tener en cuenta la tentativa anterior, si fue
 "muy alta" o "muy baja".
 
-![Demostración animada de sesión de juego]()
+![Demostración animada de sesión de juego](https://raw.githubusercontent.com/Addis-cx/DEV013-guess-the-number/main/Animation.gif)
 
 ## 2. Diagrama de Clases del Proyecto "Adivina el Número"
+
+![Diagrama de Clases](https://raw.githubusercontent.com/Laboratoria/curriculum/bccce863b4bca2aac6cad8548866ed8697553c94/projects/05-guess-the-number/docs/classDiagramRelation.png)
 
 El proyecto se estructura alrededor de las siguientes clases principales,
 con las siguientes responsabilidades y relaciones:
